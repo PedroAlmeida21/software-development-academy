@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flex Layout Example</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .item {
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem;
+            flex: 1 1 200px;
+        }
+
+        footer {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <div class="content">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>

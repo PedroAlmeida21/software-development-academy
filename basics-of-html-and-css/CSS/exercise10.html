@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Variables and JavaScript Integration</title>
+    <style>
+        :root {
+            --square-color: #3498db;
+        }
+
+        .colored-square {
+            width: 200px;
+            height: 200px;
+            background-color: var(--square-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="colored-square"></div>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            // Generate random color
+            var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            // Update CSS variable value
+            document.documentElement.style.setProperty('--square-color', randomColor);
+        }
+    </script>
+</body>
+
+</html>

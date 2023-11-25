@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Transitions and Animations</title>
+    <style>
+        .colorful-div {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
+            transition: background-color 0.5s ease;
+            animation: rotate 2s infinite linear;
+        }
+
+        .colorful-div:hover {
+            background-color: #FFC107;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="colorful-div"></div>
+</body>
+
+</html>

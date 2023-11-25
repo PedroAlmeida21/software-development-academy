@@ -1,0 +1,122 @@
+
+p:hover {
+    background-color: red !important;
+}
+
+div#container {
+    position: relative; 
+    height: 500px; 
+    width: 500px;
+    border: 1px red;
+    border-style: dashed;
+}
+
+div#top {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+}
+
+div#bottom {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: absolute;
+    bottom: 10px;
+}
+
+div#left {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+div#right {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+    right: 20px;
+    bottom: 45px;
+}
+
+.container {
+    position: relative;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.static-box {
+    position: static;
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+}
+
+.relative-box {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: lightgoldenrodyellow;
+    width: 100px;
+    height: 100px;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 10px;
+    background-color: lightpink;
+    width: 100px;
+    height: 100px;
+}
+
+.block {
+    display: block;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    margin-right: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    margin-right: 10px;
+}
+
+.table {
+    display: table;
+    background-color: lightgoldenrodyellow;
+    margin-bottom: 10px;
+}
+
+.none {
+    display: none;
+}

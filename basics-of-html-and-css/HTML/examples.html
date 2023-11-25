@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta keywords="">
+        <meta description="">
+        <title>Document SDA</title>
+    </head>
+    <body>
+        <header>
+            <nav class="crumbs">
+                <ol>
+                <li class="crumb"><a href="#">HOME</a></li>
+                <li class="crumb"><a href="#">Developer</a></li>
+                <li class="crumb">Javascript</li>
+                </ol>
+            </nav>
+        </header>
+        
+        <h1 class="heading-class" >This is a title.</h1>
+        <h2 id="heading-id">This is a secondary title.</h2>
+        <h3 class="heading-class">This is a extra secondary title.</h3>
+        <h4>This is a extra extra secondary title.</h4>
+        <p>This is a <em>paragraph</em>.</p>
+        <p>This is <strong>another</strong> paragraph <span>and I am a span</span></p>
+        <a href="https://www.google.com">This is a link</a>
+
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+        </ul>
+
+        <ol type="I">
+            <li>Mango</li>
+            <li>banana</li>
+            <li>Apple</li>
+            <li>Strawberry</li>
+        </ol>
+        
+        <table>
+            <tr>
+                <th>name</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td>computer</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>car</td>
+                <td>a lot</td>
+            </tr>
+        </table>
+
+         &nbsp;
+         &lt;
+         &laquo;
+         <!-- above you see some 
+         special characters -->
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?si=OGieLOcpTMb09ygs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <img alt="example" src="https://images.pexels.com/photos/9420357/pexels-photo-9420357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/> -->
+    
+        <form action="str.html">
+            <div>
+                <textarea name="description" rows="5" cols="50"></textarea>
+            </div>
+            <div>
+                <select name="brand" >
+                    <option value="1">ford</option>
+                    <option value="2" selected>opel</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" name="clickit">click! </button>
+            </div>
+         </form>
+    </body>
+    <style>
+        .heading-class {
+            color: red;
+        }
+
+        #heading-id {
+            color: pink;
+        }
+
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '>';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+    </style>
+</html>
