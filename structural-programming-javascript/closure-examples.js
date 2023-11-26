@@ -31,7 +31,7 @@ aux() // call inner funciton
 //     }
 // }
 
-// function Test() {
+// function test() {
 //     var result = []
 
 //     for (var i = 0; i < 5; i++) {
@@ -76,5 +76,6 @@ var result2= [];
 }
 
 for (var i = 0; i < 5; i++) {
-    console.log(result2[i]())
+    //console.log(result2[i]())
 }
+

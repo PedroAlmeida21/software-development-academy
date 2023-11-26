@@ -84,3 +84,67 @@ function printName() {
 }
 
 printName()
+
+// Pass by reference vs pass by value
+
+var originalVal = 1
+
+function PassedByValue(val) {
+    val = 5
+
+    //console.log(val)
+}
+
+PassedByValue(originalVal)
+
+//console.log(originalVal)
+
+var obj = {
+    originalVal: 1
+}
+
+function PassedByReference(objRef) {
+    objRef.originalVal = 5
+
+    console.log(objRef.originalVal)
+}
+
+PassedByReference(obj)
+
+console.log(obj.originalVal)
+
+// Exercise with Pass By Value
+// Description: Create a function that accepts a number as an argument, multiple by 10 and returns the value. 
+//              Console log all variables (before & after function is called) + function output.
+// Constraints: You must pass a variable to the function.
+
+var originalNum = 10
+
+function Multiple(num) {
+    num *= 10
+    console.log(num)
+    return num
+}
+
+Multiple(originalNum)
+
+console.log(originalNum)
+
+// Exercise with Pass By Reference
+// Description: Create a object composed by 2 properties (name and age).
+//              Create a function that accepts a object and a number as arguments.
+//              Function should update age with the number argument.
+// Constraint: You must pass an object to the function.
+
+var obj2 = {
+    name: 'Aura',
+    age: 2
+}
+
+function UpdateAge(objRefTwo, newAge) {
+    objRefTwo.age = newAge
+}
+
+UpdateAge(obj2, 5)
+
+console.log(`Name: ${obj2.name}\nAge: ${obj2.age}`)
