@@ -1,3 +1,5 @@
+'use strict'
+
 // anonymous function
 var myFunc = function(a, b) 
 {
@@ -148,3 +150,14 @@ function UpdateAge(objRefTwo, newAge) {
 UpdateAge(obj2, 5)
 
 console.log(`Name: ${obj2.name}\nAge: ${obj2.age}`)
+
+const mutatedObject = {
+    property1: "Test",
+    property2: 12
+}
+
+Object.freeze(mutatedObject)
+
+mutatedObject.property1 = "Updated"
+
+console.log("Value of object: " + mutatedObject.property1)
